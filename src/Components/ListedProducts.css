@@ -1,0 +1,32 @@
+.form2{
+    display: grid;
+    border:solid
+}
+
+.size button{
+    background-color: white;
+    border:solid;
+    border-color: black;
+}
+
+.Name h1{
+    font-size: larger;
+   
+}
+
+.Name{
+    gap:30px
+}
+
+
+.cont{
+    display:flex;
+    gap:120px
+}
+
+.buttons{
+    margin-left: 200px;
+    margin-top: 13px;
+    display: flex;
+    gap:40px
+}

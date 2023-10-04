@@ -1,0 +1,72 @@
+.form1{
+    margin-top:50px;
+    margin-left: 300px;
+    border:solid;
+    margin-right: 450px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(106, 226, 110);
+}
+
+.button button{
+    font-weight: bold;
+    border-radius: 3px;
+    margin-left: 300px;
+    border:solid;
+    background-color:rgb(127, 187, 127);
+}
+
+.Name h1{
+    font-size: larger;
+   
+}
+
+.Name{
+    gap:30px
+}
+
+.form1 label{
+    font-size:large;
+}
+
+
+.S input{
+    margin-left: 113px;
+    width: 20px;
+    border:solid;
+    border-radius:2px;
+}
+.M input{
+    margin-left: 106px;
+    width: 20px;
+    border:solid;
+    border-radius:2px;
+}
+.L input{
+    margin-left: 113px;
+    width: 20px;
+    border:solid;
+    border-radius:2px;
+}
+
+
+.Price input{
+    margin-left: 85px;
+    border:solid;
+    border-radius:2px;
+}
+
+
+.ProductName input{
+    margin-left: 10px;
+    border:solid;
+    border-radius:2px;
+}
+
+.Description input{
+    margin-left: 10px;
+    border:solid;
+    border-radius:2px;
+}
