@@ -2,6 +2,8 @@ import React, { useContext, useState } from 'react'
 import './Products.css'
 import ListedProducts from './ListedProducts'
 import CartContext from '../Store/CartContext'
+import Cart from '../Portal/Cart'
+import CartButton from '../Portal/CartButton'
 const Products = () => {
   const cntx=useContext(CartContext)
   const [productName,setProductName]=useState('')
@@ -29,12 +31,15 @@ const Products = () => {
 
   return (
     <>
-    
+    <div>
+      <CartButton></CartButton>
+    </div>
       <div className='form1' >
         <form onSubmit={submitdataHandler}>
         <div className='ProductName'>
             <label>Product Name</label>
-            <select id="cars" name="cars" onChange={nameHandler}>
+            <select  onChange={nameHandler}>
+            <option value="Gucci shoes"  ></option>
     <option value="Gucci shoes"  >Gucci shoes</option>
     <option value="Gucci sprinter shoes" >Gucci sprinter shoes</option>
     <option value="Crocs" >Crocs</option>
@@ -68,6 +73,7 @@ const Products = () => {
         </form>
       </div>
       <ListedProducts></ListedProducts>
+     {cntx.cartOpen && <Cart></Cart>}
     </>
   )
 }

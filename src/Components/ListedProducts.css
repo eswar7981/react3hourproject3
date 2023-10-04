@@ -21,7 +21,8 @@
 
 .cont{
     display:flex;
-    gap:120px
+    gap:120px;
+    border:solid
 }
 
 .buttons{

@@ -7,19 +7,39 @@ const ListedProducts = () => {
 
 
 
-  const smallQuantityHandler=(e)=>{
+  const smallQuantityHandler=(e,item)=>{
     e.preventDefault()
+    if(item.smallQ===0){
+      alert('sorry product is out of stock')
+    }
+    else{
+      cntx.smallProductAdd(item)
+    }
+   
     
   }
 
 
-  const mediumQuantityHandler=(e)=>{
+  const mediumQuantityHandler=(e,item)=>{
     e.preventDefault()
+    if(item.mediumQ===0){
+      alert('sorry product is out of stock')
+    }
+    else{
+      cntx.mediumProductAdd(item)
+    }
+    
   }
 
 
-  const largeQuantityHandler=(e)=>{
+  const largeQuantityHandler=(e,item)=>{
     e.preventDefault()
+    if(item.largeQ===0){
+      alert('sorry product is out of stock')
+    }
+    else{
+      cntx.largeProductAdd(item)
+    }
   }
 
 
@@ -41,19 +61,19 @@ const ListedProducts = () => {
           <div className="Name">
             <h1>{item.price}</h1>
           </div>
-          </div>
+         
           <div className="buttons">
           <div className="size">
-            <button onClick={smallQuantityHandler}>{`small ${item.smallQ}`}</button>
+            <button onClick={(e)=>smallQuantityHandler(e,item)}>{`small ${item.smallQ}`}</button>
           </div>
           <div className="size">
-          <button onClick={mediumQuantityHandler}>{`small ${item.mediumQ}`}</button>
+          <button onClick={(e)=>mediumQuantityHandler(e,item)}>{`medium ${item.mediumQ}`}</button>
           </div>
           <div className="size">
-          <button  onClick={largeQuantityHandler}>{`small ${item.largeQ}`}</button>
+          <button  onClick={(e)=>largeQuantityHandler(e,item)}>{`large ${item.largeQ}`}</button>
           </div>
           </div>
-          
+          </div>
         </>
       ))}
     </div>

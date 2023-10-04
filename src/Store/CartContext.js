@@ -8,8 +8,10 @@ React.createContext({
     smallProductAdd:(id)=>{},
     mediumProductAdd:(id)=>{},
     AddingProduct:(id)=>{},
-    RemovingProduct:(id)=>{}
-
+    RemovingProduct:(id)=>{},
+    openCart:()=>{},
+    closeCart:()=>{},
+    cart:[],
 })
 
 export default CartContext

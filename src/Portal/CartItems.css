@@ -1,0 +1,53 @@
+@media (min-width: 768px) {
+    .modals {
+      width: 60rem;
+      left: calc(50% - 20rem);
+    }
+  }
+  @keyframes slide-down {
+    from {
+      opacity: 1;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .items{
+    display: grid;
+  }
+
+  .item{
+    display: flex;
+    gap:20px
+  }
+
+.close {
+    margin-left: 600px;
+}
+
+.close button{
+    width:40px;
+    height:40px;
+    color: black;
+    border:solid;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: rgb(221, 40, 40);
+}
+
+.order{
+    margin-left: 550px;
+}
+
+.order button{
+    width:80px;
+    height:40px;
+    color: black;
+    border:solid;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: rgb(54, 239, 29);
+}
